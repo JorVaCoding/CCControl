@@ -1,0 +1,14 @@
+local args = { ... }
+
+if #args < 1 then
+	print( "getfile <file> [localFile]" )
+end
+
+
+local gitFile = args[0]
+local localFile = gitFile
+if #args < 2 then
+	localFile = args[1]
+end
+
+shell.run("git get "..localFile.." jorvacoding cccontrol "..gitFile.." build")
