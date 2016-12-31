@@ -1,0 +1,13 @@
+write("Clearing computer... ");
+shell.run("delete /*")
+print("complete.")
+
+write("Copying files... ")
+shell.run("copy getfile /apis/getfile")
+shell.run("copy git /apis/git")
+print("complete.")
+
+write("Downloading files... ")
+shell.run("./getfile apis/json /apis/json")
+shell.run("./getfile apis/encrypt /apis/encrypt")
+print("complete.")

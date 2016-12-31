@@ -28,7 +28,6 @@ local function get(user, repo, branch, file)
     if response then
         print( "Success." )
         local sResponse = response.readAll()
-        print(sResponse);
         response.close()
         if sResponse ~= "404: Not Found" then
             return sResponse
