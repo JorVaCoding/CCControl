@@ -1,13 +1,11 @@
-write("Loading APIs... ");
+print("Loading APIs... ");
 os.loadAPI("/disk/git")
-print("complete.")
 
-write("Clearing computer... ");
-shell.run("delete /*")
-print("complete.")
+print("Clearing computer... ");
+shell.run("delete /apis/*")
+shell.run("delete /os/*")
 
-write("Downloading files... ")
+print("Downloading files... ")
 git.save("jorvacoding", "cccontrol", "build", "apis/git.lua", "/apis/git", true)
 git.save("jorvacoding", "cccontrol", "build", "apis/json.lua", "/apis/json", true)
 git.save("jorvacoding", "cccontrol", "build", "apis/encrypt.lua", "/apis/encrypt", true)
-print("complete.")
