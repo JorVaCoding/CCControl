@@ -1,0 +1,12 @@
+{
+  "foo": {
+    "displayName": "Foo",
+    "dir": "foo",
+    "bootFile": "fooboot",
+  },
+  "bar": {
+    "displayName": "Bar",
+    "dir": "bar",
+    "bootFile": "barboot",
+  }
+}
